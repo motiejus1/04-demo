@@ -53,6 +53,8 @@ p {
     background-color: blue;
 }
 
+
+
 @media all and (max-width: 720px) {
     /* @media all and (min-width: 720px) { */
     .flex-container {
@@ -62,7 +64,7 @@ p {
         /* flex-direction: column; */
     }
 
-    [class*="flex-item"] {
+    [class*="flex-item"]:not(.flex-item-4) {
         width: 100%;
     }
 
