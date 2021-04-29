@@ -8,9 +8,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" >
     <style>
 
+        html {
+            font-size: 12px;
+        }
+
+        body {
+            max-width: 1920px;
+            margin:0 auto;
+        }
+
+        .kvadratelis {
+            width: 20rem;
+            height: 20rem;
+            background-color: red;
+        }
+
+        /* bazinis * daugiklio = dydis pikseliais */
+        /* 12px * 2 = 24 px */
         .open-sans h1 {
             font-family: "Open Sans";
-            font-size: 24px;
+            font-size: 2rem; /* 24px; */
             font-style: normal;
             font-variant: normal;
             font-weight: 700;
@@ -19,7 +36,7 @@
 
         .open-sans h3 {
             font-family: "Open Sans";
-            font-size: 14px;
+            font-size: 1.16rem;
             font-style: normal;
             font-variant: normal;
             font-weight: 700;
@@ -28,7 +45,7 @@
 
         .open-sans h5 {
             font-family: "Open Sans";
-            font-size: 12px;
+            font-size: 1rem;
             font-style: normal;
             font-variant: normal;
             font-weight: 700;
@@ -37,7 +54,7 @@
 
         .open-sans p {
             font-family: "Open Sans";
-            font-size: 14px;
+            font-size: 1.16rem;
             font-style: normal;
             font-variant: normal;
             font-weight: 400;
@@ -46,7 +63,7 @@
 
         .open-sans blockquote {
             font-family: "Open Sans";
-            font-size: 21px;
+            font-size: 1.75rem;
             font-style:normal;
             font-variant: normal;
             font-weight: 400;
@@ -57,7 +74,7 @@
 
         .open-sans pre {
             font-family: "Open Sans";
-            font-size: 13px;
+            font-size: 1.08rem;
             font-style:normal;
             font-variant: normal;
             font-weight: 400;
@@ -115,17 +132,63 @@
             padding: 10px;
         }
 
+        @media all and (max-width: 720px) {
+
+            html {
+                font-size: 18px;
+            }
+
+            .col-md-1 {
+                width: 8.33%;
+            }
+            .col-md-2 {
+                width: 16.66%;
+            }
+            .col-md-3 {
+                width: 25%;
+            }
+            .col-md-4 {
+                width: 33.33%;
+            }
+            .col-md-5 {
+                width: 41.66%;
+            }
+            .col-md-6 {
+                width: 50%;
+            }
+            .col-md-7 {
+                width: 58.33%;
+            }
+            .col-md-8 {
+                width: 66.66%;
+            }
+            .col-md-9 {
+                width: 75%;
+            }
+            .col-md-10 {
+                width: 83.33%;
+            }
+            .col-md-11 {
+                width: 91.66%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
 
     </style>
 </head>
 <body>
     <div class='container'>
         <div class='row'>
-            <div class='col-6'>
+            <div class='col-6 col-md-12'>
                 <!-- Alt + Z. Sukelia teksta i matoma lauka -->
                 <h1>Antraštė</h1>
                 <h3>H3 antraštė</h3>
                 <h5>H5 antraštė</h5>
+                <h2>H2 antraste</h2>
                 <p>This paragraph is in Open Sans. 
                     Keep reading for how to use the buttons to the left. Change your settings, and choose what section you want the font to apply to. Once you are pleased with the settings for that section you can click save. Your selections will remain as you look for another font for another section of this preview.</p>
                 <blockquote>Mano tam tikra citata</blockquote>
@@ -134,8 +197,11 @@
                     test;
                 }       
                 </pre>
+                <div class='kvadratelis'>
+
+                </div>
             </div>
-            <div class='col-6 open-sans'>
+            <div class='col-6 col-md-12 open-sans'>
                 <h1>Antraštė</h1>
                 <h3>H3 antraštė</h3>
                 <h5>H5 antraštė</h5>
