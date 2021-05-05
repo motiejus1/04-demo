@@ -61,7 +61,13 @@
             margin: 22px; 
         }
 
+        .navbar > .list {
+            display:flex;
+        }
+        
+
         .navbar > .list > .item {
+            display: block;
             height: 64px;
             line-height: 64px;
             padding-left: 22px;
@@ -100,17 +106,59 @@
         }
 
         .navbar > .toggle > .icon:before {
-            top: 22px;
+            top: -8px;
         }
 
         .navbar > .toggle > .icon:after {
-            top: 40px;
+            top: 8px;
+        }
+
+        .navbar > .toggle > .icon {
+            position: relative;
+            margin-top: 8px;
+            margin-bottom: 8px;
         }
 
         .navbar > .toggle {
-            /* display:none; */
-            position: relative;
+            display:none;
+            border:0;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 22px;
         }
+
+        @media all and (max-width: 786px) {
+
+            .area {
+                flex-direction: column;
+            }
+
+            .navbar > .list {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .navbar > .list > .item {
+                width: 100%
+            }
+
+            .navbar > .toggle {
+                display:block;
+            }
+            
+        }
+
+        .kvadratelis {
+            display:none;
+            width:200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .kvadratelis.aktyvus {
+            display:block;
+        }
+
 
 
     </style>
@@ -121,7 +169,6 @@
     <div class='container'>
         <div class='navbar-component'>
             <div class='navbar area'>
-                
                 <a href='#' class='brand'>Įmonė</a>
 
                 <nav id='navigation' class='list'>
@@ -135,12 +182,61 @@
                     </span>
                 </nav>
                 
-                <button class='toggle'>
+                <button id='hamburger' class='toggle'>
                     <span class='icon'></span>
                 </button>
 
             </div>
         </div>
+
+        <div class='main'>
+            <span class='dinaminis'>Tekstas</span>
+            <span class='dinaminis1'>4</span>
+            <button onclick='on()' class='on'>Įjungti</button>
+            <button onclick='off()' class='off'>Išjungti</button>
+
+            <div class='kvadratelis aktyvus apskritimas'></div>
+        </div>
     </div>
+    <script>
+
+        function on() {
+            document.querySelector('.kvadratelis').classList.add('aktyvus');
+            console.log('Įjungta');
+        }
+
+        function off() {
+            console.log('Išjungta');
+            // console.log(document.querySelector('.kvadratelis').classList);
+            document.querySelector('.kvadratelis').classList.remove('aktyvus');
+        }
+
+        var suma, sk1, sk2;
+        suma = 0;
+        sk1 = 8;
+        sk2 = 10;
+
+        suma = sk1 + sk2;
+
+        console.log(suma);
+        console.log('tekstas irasytas ranka');
+        console.log(document.querySelector('.dinaminis').innerText);
+        console.log(document.querySelector('.dinaminis1').innerText);
+
+        sk1 = document.querySelector('.dinaminis1').innerText; //4
+        sk2 = 5;
+
+        var skirtumas;
+
+        skirtumas = sk2 - sk1;
+
+
+        console.log('Skaicius is dizaino ' + sk1)
+
+        console.log(skirtumas)
+
+        document.querySelector('.dinaminis').innerText = skirtumas;
+    
+    </script>
 </body>
 </html>
