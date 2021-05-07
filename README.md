@@ -76,3 +76,7 @@ Papildomi taškai:
 1. Nuotraukos įkeliamos pasitelkiant išorinį API.
 
 Pastaba: Tai yra papildoma užduotis. Užduotis pateikta pakankamai abstrakčiai, todėl galimi įvairūs variantai ir sprendimai. Joje gali kilti tikrai daug klausimų ir neaiškumų.
+
+Paskaita 2021-05-07:
+Užduotis:
+1.Suprogramuoti dizainą pagal Adobe Xd maketą https://xd.adobe.com/view/2a431237-a0b8-4650-9fd2-e01b6eba3f24-7f10/
