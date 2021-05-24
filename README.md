@@ -80,3 +80,6 @@ Pastaba: Tai yra papildoma užduotis. Užduotis pateikta pakankamai abstrakčiai
 Paskaita 2021-05-07:
 Papildoma neprivaloma užduotis:
 1.Suprogramuoti dizainą pagal Adobe Xd maketą https://xd.adobe.com/view/2a431237-a0b8-4650-9fd2-e01b6eba3f24-7f10/
+	
+Užduočių varianta:
+https://xd.adobe.com/view/e4c94ffa-7d2c-4209-808b-a2cfcaced000-b19a/specs/	
